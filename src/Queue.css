@@ -1,0 +1,21 @@
+.queue-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.queue {
+    width: 150px;
+    height: 400px;
+    background-color: beige;
+}
+
+.queue-button {
+    width: 150px;
+    height: 70px;
+}
+
+.classified-image {
+    width: 130px;
+}

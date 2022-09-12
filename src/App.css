@@ -1,0 +1,16 @@
+.App {
+
+}
+
+.main-image {
+  display: flex;
+  width: 400px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.queues {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
