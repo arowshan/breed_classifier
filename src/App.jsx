@@ -42,10 +42,15 @@ class App extends Component {
     ));
     return (
       <div className="App">
-        <h1>Classifier</h1>
+        <h1 className="title">Classifier</h1>
 
-        <button onClick={this.fetchImage}>Fetch Next</button>
-        <img className="main-image" src={this.state.image} alt="main dog" />
+        <div className="fetch-wrapper">
+          <button onClick={this.fetchImage} className="fetch-next">
+            Fetch Next
+          </button>
+          <img className="main-image" src={this.state.image} alt="main dog" />
+        </div>
+
         <div className="queues">{queues}</div>
       </div>
     );

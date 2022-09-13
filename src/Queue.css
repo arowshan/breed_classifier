@@ -7,15 +7,22 @@
 
 .queue {
     width: 150px;
-    height: 400px;
-    background-color: beige;
+    height: 450px;
+    background-color:thistle;
+    text-align: center;
+    overflow: hidden;
 }
 
 .queue-button {
     width: 150px;
     height: 70px;
+    cursor: pointer;
+    background-color:teal;
+    color: white;
 }
 
 .classified-image {
-    width: 130px;
+    width:  150px;
+    height: 150px;
+    object-fit: cover;
 }
