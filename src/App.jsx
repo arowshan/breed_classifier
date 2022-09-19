@@ -28,9 +28,10 @@ class App extends Component {
     const breeds = [
       "Golden Retriever",
       "Bulldog",
-      " Pitbull",
+      "Pitbull",
       "German Shepherd",
       "Labrador",
+      "Other",
     ];
     const queues = breeds.map((breed) => (
       <Queue
@@ -45,10 +46,15 @@ class App extends Component {
         <h1 className="title">Classifier</h1>
 
         <div className="fetch-wrapper">
-          <button onClick={this.fetchImage} className="fetch-next">
-            Fetch Next
-          </button>
           <img className="main-image" src={this.state.image} alt="main dog" />
+          <div>
+            <button onClick={this.fetchImage} className="fetch-next">
+              Fetch Next
+            </button>
+            <h1 className="instruction">
+              Select the correct queue to label the breed for this dog.
+            </h1>
+          </div>
         </div>
 
         <div className="queues">{queues}</div>

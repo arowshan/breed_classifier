@@ -23,19 +23,19 @@ export default class Queue extends Component {
   removeImage = (imageUrl) => {
     this.setState((prevState) => {
       const images = prevState.images;
-      images.remove(imageUrl);
+      images.delete(imageUrl);
       return { images: images };
     });
   };
 
   render() {
     const dogImages = Array.from(this.state.images).map((image) => (
-      <img
-        src={image}
-        className="classified-image"
-        key={image}
-        alt="queue dog"
-      />
+      <div className="image-wrapper" key={image}>
+        <button className="x-button" onClick={() => this.removeImage(image)}>
+          x
+        </button>
+        <img src={image} className="classified-image" alt="queue dog" />
+      </div>
     ));
     return (
       <div className="queue-wrapper">
